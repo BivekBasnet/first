@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class,'homepage'])->name('home');
 
+
 Route::get('/user',[HomeController::class,'homepage'])->name('home');
 
 Route::get('/home', [admincontroller::class,'index'])->middleware('auth')->name('home');
